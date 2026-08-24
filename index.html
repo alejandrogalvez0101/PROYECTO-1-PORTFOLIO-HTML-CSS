@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Gálvez — Portfolio</title>
+  <meta name="description" content="Portfolio personal de Alejandro Gálvez, desarrollador full stack en formación. Proyectos, habilidades y contacto.">
+  <meta name="author" content="Alejandro Gálvez">
+  <meta name="keywords" content="portfolio, desarrollador, desarrollo web, HTML, CSS, JavaScript, proyectos">
+  <meta name="theme-color" content="#222222">
+
+  <!-- Tipografías -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos -->
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- === HEADER / NAV === -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Alejandro Gálvez, inicio">
+        <span class="logo-bracket">&lt;</span>Alejandro Gálvez<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="tabs-nav" aria-label="Navegación principal">
+        <ul class="tabs-list">
+          <li><a href="#inicio" class="tab">INICIO</a></li>
+          <li><a href="#sobre-mi" class="tab">SOBRE MÍ</a></li>
+          <li><a href="#portafolio" class="tab">PORTFOLIO</a></li>
+          <li><a href="#contacto" class="tab">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- === HERO === -->
+
+    <section id="inicio" class="hero">
+      <span class="hero-glyph" aria-hidden="true">&lt;/&gt;</span>
+      <div class="container hero-inner">
+        <p class="eyebrow">// INICIO</p>
+
+        <h1 class="hero-title"><span class="accent">CON</span>sistencia en el <span class="accent">TRA</span>bajo, <span class="accent">TA</span>lento en la lógica y <span class="accent">ME</span>jora continua.</h1>
+        <ul class="skills-list" aria-label="Tecnologías que utilizo">
+          <li><img src="https://cdn.simpleicons.org/html5" alt="" width="40" height="40" loading="lazy"><span>HTML</span></li>
+          <li><img src="https://cdn.simpleicons.org/css" alt="" width="40" height="40" loading="lazy"><span>CSS</span></li>
+          <li><img src="https://cdn.simpleicons.org/javascript" alt="" width="40" height="40" loading="lazy"><span>JavaScript</span></li>
+          <li><img src="https://cdn.simpleicons.org/python" alt="" width="40" height="40" loading="lazy"><span>Python</span></li>
+          <li><img src="https://cdn.simpleicons.org/git" alt="" width="40" height="40" loading="lazy"><span>Git</span></li>
+          <li><img src="https://cdn.simpleicons.org/mysql" alt="" width="40" height="40" loading="lazy"><span>SQL</span></li>
+          <li><img src="https://cdn.simpleicons.org/mongodb" alt="" width="40" height="40" loading="lazy"><span>NoSQL</span></li>
+          <li><img src="https://cdn.simpleicons.org/cisco" alt="" width="40" height="40" loading="lazy"><span>Cisco Packet Tracer</span></li>
+          <li><img src="imagenes/adobe.png" alt="" width="40" height="40" loading="lazy"><span>Paquete Adobe</span></li>
+        </ul>
+
+        <div class="hero-actions">
+          <a href="#portafolio" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-ghost">Contacto</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- === SOBRE MÍ === -->
+
+    <section id="sobre-mi" class="about">
+      <div class="container about-inner">
+        <div class="about-photo">
+          <img src="imagenes/foto-portfolio.png" alt="Retrato de Alejandro Gálvez sonriendo, sobre fondo oscuro" width="220" height="220" loading="lazy">
+
+          <ul class="about-social" aria-label="Enlaces de contacto">
+            <li>
+              <a href="https://github.com/alejandrogalvez0101" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="https://cdn.simpleicons.org/github/FAF3E1" alt="" width="44" height="44" loading="lazy">
+              </a>
+            </li>
+            <li>
+              <a href="mailto:alejandro.galvez0101@gmail.com" aria-label="Email">
+                <img src="imagenes/gmail.png" alt="" width="44" height="44" loading="lazy">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/alejandro-galvez-cordero-75a170395/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="imagenes/linkedin.png" alt="" width="44" height="44" loading="lazy">
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/34677117520" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <img src="imagenes/whatsapp.png" alt="" width="44" height="44" loading="lazy">
+              </a>
+            </li>
+          </ul>
+
+          <a href="archivos/CV-Alejandro-Galvez-Cordero.pdf" download class="btn btn-ghost about-cv-btn">Descargar CV</a>
+        </div>
+
+        <div class="about-text">
+          <p class="eyebrow">// SOBRE MÍ</p>
+
+          <!-- Pestañas deslizantes hechas solo con CSS (input radio + label) -->
+          <div class="about-tabs">
+            <input type="radio" name="about-tab" id="tab-trayectoria" class="about-tab-radio" checked>
+            <input type="radio" name="about-tab" id="tab-formacion" class="about-tab-radio">
+
+            <div class="about-tab-nav">
+              <label for="tab-trayectoria" class="about-tab-label">Trayectoria</label>
+              <label for="tab-formacion" class="about-tab-label">Formación</label>
+            </div>
+
+            <div class="about-tab-viewport">
+              <div class="about-tab-track">
+
+                <div class="about-tab-panel">
+                  <p>Mi trayectoria profesional comenzó en el sector audiovisual, donde me formé en Realización de Proyectos Audiovisuales y Espectáculos y trabajé durante más de cuatro años en la grabación y edición de eventos y programas, así como en directos para televisión, conexiones y emisiones en vivo.</p>
+
+                  <p>Aunque mi formación inicial es audiovisual, la tecnología siempre ha estado muy presente en mi trabajo, en ese entorno empecé a “cacharrear” con equipos informáticos y técnicos, lo que despertó aún más mi interés por el mundo de la informática.</p>
+
+                  <p>Durante varios años también formé parte del negocio familiar relacionado con el cuidado de animales. Esta experiencia me enseñó la importancia de la responsabilidad, la constancia y el trato cercano con el cliente.</p>
+
+                  <p>Con el tiempo decidí dar un giro a mi trayectoria profesional y apostar de lleno por la informática, un campo que siempre me había llamado la atención, con el objetivo de seguir aprendiendo y especializarme en un sector en constante evolución y que siempre me “picó” la curiosidad.</p>
+
+                  <p>Me gusta implicarme en lo que hago, aprender cosas nuevas y aportar todo lo que esté en mi mano. Busco una oportunidad en el ámbito de la informática que me permita desarrollar mi carrera profesional, seguir creciendo y aplicar tanto mis conocimientos técnicos como la experiencia adquirida en etapas anteriores.</p>
+                </div>
+
+                
+                <div class="about-tab-panel">
+                  <ul class="education-list">
+                    <li>
+                      <p class="education-dates">2025 – Actualmente cursando</p>
+                      <h3>Técnico superior en Administración de Sistemas Informáticos en Red (ASIR)</h3>
+                      <p class="education-place">ThePower FP - Caja Mágica</p>
+                    </li>
+                    <li>
+                      <p class="education-dates">2025 – Actualmente cursando</p>
+                      <h3>Máster en Ciberseguridad</h3>
+                      <p class="education-place">ThePower FP - Caja Mágica</p>
+                    </li>
+                    <li>
+                      <p class="education-dates">2016 – 2018</p>
+                      <h3>Técnico superior en Realización de Proyectos Audiovisuales y Espectáculos</h3>
+                      <p class="education-place">IES Jose Luis Garci</p>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === PORTFOLIO === -->
+
+    <section id="portafolio" class="portfolio">
+      <div class="container">
+        <p class="eyebrow eyebrow-center">// PORTFOLIO</p>
+        <h2 class="section-title-center">Algunos proyectos</h2>
+
+        <div class="portfolio-grid">
+
+          <article class="project-card">
+            <img src="imagenes/logo-definitivo-negro.png" alt="Proyecto Intermodular de Primer Año ASIR" loading="lazy">
+            <div class="project-body">
+              <h3>Proyecto Intermodular de Primer Año ASIR</h3>
+              <p>Este proyecto representa la implementación tecnológica integral de IT Alex Academy, un centro de formación especializado en IT. La solución abarca desde la arquitectura de base de datos y el procesamiento de marcas, hasta la administración de servidores seguros y la proyección en la nube.</p>
+              <ul class="tag-list" aria-label="Tecnologías usadas">
+                <li>Cisco</li><li>CSS</li><li>HTML</li><li>JavaScript</li>
+              </ul>
+              <a href="https://github.com/alejandrogalvez0101/PROYECTO-INTERMODULAR-1-ASIR" target="_blank" rel="noopener noreferrer" class="project-link">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="imagenes/MANUAL-HARDWARE.png" alt="Captura de Portada de Manual de Hardware" loading="lazy">
+            <div class="project-body">
+              <h3>Manual Fundamentos Hardware</h3>
+              <p>Manual que abarca configuración, reconocimiento, montaje y mantenimiento de equipos de hardware. Manual de usuario de algunas herramientas software.</p>
+              <ul class="tag-list" aria-label="Tecnologías usadas">
+                <li>Clonezilla</li><li>RAID 6</li><li>Benchmarking</li><li>VirtualBox</li>
+              </ul>
+              <a href="https://github.com/alejandrogalvez0101/1-ASIR/blob/main/MANUAL%20FUNDAMENTOS%20HARDWARE/Actividad_Entregable_FUHAR_v2_Alejandro_Galvez_Cordero.pdf" target="_blank" rel="noopener noreferrer" class="project-link">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="imagenes/mapa-distribucion-2-subredes.png" alt="Captura de diseño de una red pequeña para una empresa en Cisco" loading="lazy">
+            <div class="project-body">
+              <h3>Diseñar e implementar una red pequeña y funcional para una empresa</h3>
+              <p>Diseñar e implementar una red pequeña y funcional, utilizando el programa Cisco Packet Tracer incluyendo el plan de direccionamiento IPv4, la configuración de dispositivos y la comprobación de conectividad.</p>
+              <ul class="tag-list" aria-label="Tecnologías usadas">
+                <li>Cisco Packet Tracer</li>
+              </ul>
+              <a href="https://github.com/alejandrogalvez0101/1-ASIR/tree/main/PROYECTO%20NAVIDAD%20REDES" target="_blank" rel="noopener noreferrer" class="project-link">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://picsum.photos/seed/brewbot/500/320" alt="Captura del bot BrewBot mostrando una conversación sobre recetas de café" loading="lazy">
+            <div class="project-body">
+              <h3>BrewBot</h3>
+              <p>Chatbot en Python que recomienda métodos de café según el tiempo disponible y el molido.</p>
+              <ul class="tag-list" aria-label="Tecnologías usadas">
+                <li>Python</li><li>CLI</li>
+              </ul>
+              <a href="#" class="project-link">Ver proyecto →</a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Desplegable "Ver más" -->
+
+        <details class="portfolio-toggle">
+          <summary>
+            <span class="show-more">Ver más proyectos</span>
+            <span class="show-less">Ver menos</span>
+            <span class="toggle-icon" aria-hidden="true">▾</span>
+          </summary>
+
+          <div class="portfolio-grid portfolio-grid-more">
+
+            <!-- PLANTILLA: sustituye imagen, título, descripción, etiquetas y enlace -->
+            <article class="project-card">
+              <img src="https://picsum.photos/seed/proyecto3/500/320" alt="Sustituye por la descripción de tu Proyecto 3" loading="lazy">
+              <div class="project-body">
+                <h3>Proyecto 3</h3>
+                <p>Sustituye este texto por la descripción de tu proyecto.</p>
+                <ul class="tag-list" aria-label="Tecnologías usadas">
+                  <li>Tecnología 1</li><li>Tecnología 2</li>
+                </ul>
+                <a href="#" class="project-link">Ver proyecto →</a>
+              </div>
+            </article>
+
+            <!-- PLANTILLA: sustituye imagen, título, descripción, etiquetas y enlace -->
+            <article class="project-card">
+              <img src="https://picsum.photos/seed/proyecto4/500/320" alt="Sustituye por la descripción de tu Proyecto 4" loading="lazy">
+              <div class="project-body">
+                <h3>Proyecto 4</h3>
+                <p>Sustituye este texto por la descripción de tu proyecto.</p>
+                <ul class="tag-list" aria-label="Tecnologías usadas">
+                  <li>Tecnología 1</li><li>Tecnología 2</li>
+                </ul>
+                <a href="#" class="project-link">Ver proyecto →</a>
+              </div>
+            </article>
+
+            <!-- PLANTILLA: sustituye imagen, título, descripción, etiquetas y enlace -->
+            <article class="project-card">
+              <img src="https://picsum.photos/seed/proyecto5/500/320" alt="Sustituye por la descripción de tu Proyecto 5" loading="lazy">
+              <div class="project-body">
+                <h3>Proyecto 5</h3>
+                <p>Sustituye este texto por la descripción de tu proyecto.</p>
+                <ul class="tag-list" aria-label="Tecnologías usadas">
+                  <li>Tecnología 1</li><li>Tecnología 2</li>
+                </ul>
+                <a href="#" class="project-link">Ver proyecto →</a>
+              </div>
+            </article>
+
+            <!-- PLANTILLA: sustituye imagen, título, descripción, etiquetas y enlace -->
+            <article class="project-card">
+              <img src="https://picsum.photos/seed/proyecto6/500/320" alt="Sustituye por la descripción de tu Proyecto 6" loading="lazy">
+              <div class="project-body">
+                <h3>Proyecto 6</h3>
+                <p>Sustituye este texto por la descripción de tu proyecto.</p>
+                <ul class="tag-list" aria-label="Tecnologías usadas">
+                  <li>Tecnología 1</li><li>Tecnología 2</li>
+                </ul>
+                <a href="#" class="project-link">Ver proyecto →</a>
+              </div>
+            </article>
+
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- === CONTACTO === -->
+
+    <section id="contacto" class="contact">
+      <div class="container contact-inner">
+        <div class="contact-intro">
+          <p class="eyebrow">// CONTACTO</p>
+          <h2>Contáctame</h2>
+          <p>¿Tienes un proyecto en mente, trabajo o consulta? No dudes en escribirme.</p>
+        </div>
+
+        <form class="contact-form" aria-label="Formulario de contacto">
+          <div class="form-field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="3" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- === FOOTER === -->
+   
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span>2026</span> Alejandro Gálvez. Todos los derechos reservados.</p>
+      <ul class="social-list" aria-label="Redes sociales">
+        <li>
+          <a href="https://github.com/alejandrogalvez0101" target="_blank" rel="noopener noreferrer">
+            <img src="imagenes/github.png" alt="" width="18" height="18" loading="lazy">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/alejandro-galvez-cordero-75a170395/" target="_blank" rel="noopener noreferrer">
+            <img src="imagenes/linkedin.png" alt="" width="18" height="18" loading="lazy">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="mailto:alejandro.galvez0101@gmail.com">
+            <img src="imagenes/gmail.png" alt="" width="18" height="18" loading="lazy">
+            Email
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
