@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Gálvez — Portfolio</title>
+  <meta name="description" content="Portfolio personal de Alejandro Gálvez, desarrollador full stack en formación. Proyectos, habilidades y contacto.">
+  <meta name="author" content="Alejandro Gálvez">
+  <meta name="keywords" content="portfolio, desarrollador, desarrollo web, HTML, CSS, JavaScript, proyectos">
+  <meta name="theme-color" content="#10162b">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos propia -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Alejandro Gálvez, inicio">
+        <span class="logo-bracket">&lt;</span>Alejandro Gálvez<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="tabs-nav" aria-label="Navegación principal">
+        <ul class="tabs-list">
+          <li><a href="#inicio" class="tab">index.html</a></li>
+          <li><a href="#sobre-mi" class="tab">about.md</a></li>
+          <li><a href="#portafolio" class="tab">projects/</a></li>
+          <li><a href="#contacto" class="tab">contact.js</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="inicio" class="hero">
+      <span class="hero-glyph" aria-hidden="true">&lt;/&gt;</span>
+      <div class="container hero-inner">
+        <p class="eyebrow">// index.html</p>
+
+        <h1 class="hero-title"><span class="accent">CON</span>sistencia en el <span class="accent">TRA</span>bajo, <span class="accent">TA</span>lento en la lógica y <span class="accent">ME</span>jora continua.</h1>
+        <p class="hero-subtitle">Desarrolladora full stack en formación. Me gusta el código limpio, el buen café y depurar bugs a las 2 de la madrugada.</p>
+
+        <div class="hero-actions">
+          <a href="#portafolio" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-ghost">Hablemos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE MÍ ===================== -->
+    <section id="sobre-mi" class="about">
+      <div class="container about-inner">
+        <div class="about-photo">
+          <img src="https://i.pravatar.cc/400?img=4" alt="Retrato ilustrado de Alejandro Gálvez sonriendo frente a un portátil" width="220" height="220" loading="lazy">
+        </div>
+
+        <div class="about-text">
+          <p class="eyebrow">// about.md</p>
+          <h2>Sobre mí</h2>
+          <p>Estoy cursando un máster en informática y disfruto especialmente construyendo interfaces cuidadas y accesibles. Antes de programar estudié diseño, así que intento que cada proyecto tenga tanto de lógica como de estética.</p>
+          <p>Cuando no estoy delante de una pantalla, seguramente esté regando mis plantas o perdiendo una partida de ajedrez.</p>
+
+          <ul class="skills-list" aria-label="Tecnologías que utilizo">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Git</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORTAFOLIO ===================== -->
+    <section id="portafolio" class="portfolio">
+      <div class="container">
+        <p class="eyebrow eyebrow-center">// projects/</p>
+        <h2 class="section-title-center">Algunos proyectos</h2>
+
+        <div class="portfolio-grid">
+
+          <article class="project-card">
+            <img src="https://picsum.photos/seed/taskflow/500/320" alt="Captura de la aplicación de gestión de tareas TaskFlow mostrando un tablero tipo Kanban" loading="lazy">
+            <div class="project-body">
+              <h3>TaskFlow</h3>
+              <p>Gestor de tareas tipo Kanban con arrastrar y soltar, hecho con JavaScript vanilla y almacenamiento local.</p>
+              <ul class="tag-list" aria-label="Tecnologías usadas">
+                <li>JavaScript</li><li>CSS Grid</li>
+              </ul>
+              <a href="#" class="project-link">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://picsum.photos/seed/weatherly/500/320" alt="Captura de la aplicación del tiempo Weatherly mostrando una previsión de cinco días" loading="lazy">
+            <div class="project-body">
+              <h3>Weatherly</h3>
+              <p>App del tiempo que consume una API pública y muestra previsión por horas con animaciones sutiles.</p>
+              <ul class="tag-list" aria-label="Tecnologías usadas">
+                <li>API REST</li><li>JavaScript</li>
+              </ul>
+              <a href="#" class="project-link">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://picsum.photos/seed/pixelgram/500/320" alt="Captura de la galería de arte pixelado Pixelgram con una cuadrícula de imágenes" loading="lazy">
+            <div class="project-body">
+              <h3>Pixelgram</h3>
+              <p>Galería de arte pixel-art con filtros por categoría y diseño totalmente responsive.</p>
+              <ul class="tag-list" aria-label="Tecnologías usadas">
+                <li>HTML</li><li>CSS Flexbox</li>
+              </ul>
+              <a href="#" class="project-link">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://picsum.photos/seed/brewbot/500/320" alt="Captura del bot BrewBot mostrando una conversación sobre recetas de café" loading="lazy">
+            <div class="project-body">
+              <h3>BrewBot</h3>
+              <p>Chatbot en Python que recomienda métodos de café según el tiempo disponible y el molido.</p>
+              <ul class="tag-list" aria-label="Tecnologías usadas">
+                <li>Python</li><li>CLI</li>
+              </ul>
+              <a href="#" class="project-link">Ver proyecto →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section id="contacto" class="contact">
+      <div class="container contact-inner">
+        <div class="contact-intro">
+          <p class="eyebrow">// contact.js</p>
+          <h2>Hablemos</h2>
+          <p>¿Tienes un proyecto en mente o simplemente quieres saludar? Escríbeme.</p>
+        </div>
+
+        <form class="contact-form" aria-label="Formulario de contacto">
+          <div class="form-field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Ada Rivas. Todos los derechos reservados.</p>
+      <ul class="social-list" aria-label="Redes sociales">
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="mailto:ada@example.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
