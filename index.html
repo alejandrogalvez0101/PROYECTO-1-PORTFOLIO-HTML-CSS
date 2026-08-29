@@ -31,7 +31,7 @@
         <span class="logo-bracket">&lt;</span>Alejandro Gálvez<span class="logo-bracket">/&gt;</span>
       </a>
 
-      <nav class="tabs-nav" aria-label="Navegación principal">
+      <nav class="tabs-nav" id="nav-menu" aria-label="Navegación principal">
         <ul class="tabs-list">
           <li><a href="#inicio" class="tab">INICIO</a></li>
           <li><a href="#sobre-mi" class="tab">SOBRE MÍ</a></li>
@@ -39,8 +39,19 @@
           <li><a href="#contacto" class="tab">CONTACTO</a></li>
         </ul>
       </nav>
+
+      <a href="#nav-menu" class="nav-toggle-label nav-toggle-open" aria-label="Abrir menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <a href="#nav-menu-cerrado" class="nav-toggle-label nav-toggle-close" aria-label="Cerrar menú de navegación">
+        <span></span>
+        <span></span>
+      </a>
     </div>
   </header>
+  <span id="nav-menu-cerrado" aria-hidden="true"></span>
 
   <main id="contenido">
 
